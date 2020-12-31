@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django import forms
 from django.shortcuts import redirect
-# Create your views here.
+
 from . import forms
 from . import models
 from rest_framework import viewsets
