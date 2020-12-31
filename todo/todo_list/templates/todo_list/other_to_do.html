@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ other.title }}{% endblock %}
+{% block content %}
+<h1>{{ other.title }}</h1>
+<p>{{ other.due_date }}</p>
+<p>{{ other.category }}</p>
+<p>{{ other.description }}</p>
+<br>
+<p><a href="{% url 'todo_list:edit_other_to_do' id=other.id %}">Edit</a></p>
+<p><a href="{% url 'todo_list:delete_other_to_do' id=other.id %}">Delete</a></p>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}{{ item.title }}{% endblock %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    Are you sure you want to delete this to-do item titled "{{ item.title }}"?
+    <input type="submit" value="Yes">
+    <a href="{% url 'todo_list:view_to_dos' %}">Cancel</a>
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ school.title }}{% endblock %}
+{% block content %}
+<h1>{{ school.title }}</h1>
+<p>{{ school.due_date }}</p>
+<p>{{ school.course }}</p>
+<p>{{ school.category }}</p>
+<p>{{ school.description }}</p>
+<br>
+<p><a href="{% url 'todo_list:edit_school_to_do' id=school.id %}">Edit</a></p>
+<p><a href="{% url 'todo_list:delete_school_to_do' id=school.id %}">Delete</a></p>
+{% endblock %}

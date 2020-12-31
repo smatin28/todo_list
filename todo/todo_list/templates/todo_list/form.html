@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ item }} Item{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Fill in the following information:</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+</div>
+{% endblock %}

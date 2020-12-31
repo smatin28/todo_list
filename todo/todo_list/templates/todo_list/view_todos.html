@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}To-Do List{% endblock %}
+
+{% block content %}
+<h1>School To-Dos</h1>
+<table>
+    <tr>
+        <th>To-Do Item</th>
+        <th>Date</th>
+    </tr>
+    {% for school in school_to_dos %}
+    <tr>
+        <td>Title: <a href="{% url 'todo_list:school_to_do' id=school.id %}">{{ school.title }}</a></td>
+        <td>{{ school.due_date }}</td>
+    </tr> {% endfor %}
+</table>
+<h1>Extracurricular To-Dos</h1>
+<table>
+    <tr>
+        <th>To-Do Item</th>
+        <th>Date</th>
+    </tr>
+    {% for extra in extracurricular_to_dos %}
+    <tr>
+        <td>Title: <a href="{% url 'todo_list:extracurricular_to_do' id=extra.id %}">{{ extra.title }}</a></td>
+        <td>{{ extra.due_date }}</td>
+    </tr> {% endfor %}
+</table>
+<h1>Other To-Dos</h1>
+<table>
+    <tr>
+        <th>To-Do Item</th>
+        <th>Date</th>
+    </tr>
+    {% for other in other_to_dos %}
+    <tr>
+        <td>Title: <a href="{% url 'todo_list:other_to_do' id=other.id %}">{{ other.title }}</td>
+        <td>{{ other.due_date }}</td>
+    </tr> {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}Add To-Do{% endblock %}
+
+{% block content %}
+<h1 id="add">Add To-Do:</h1>
+<ul id="add-nav">
+    <li><a href="{% url 'todo_list:school_to_do_create' %}">School To-Do</a></li>
+    <li><a href="{% url 'todo_list:extracurricular_to_do_create' %}">Extracurricular To-Do</a></li>
+    <li><a href="{% url 'todo_list:other_to_do_create' %}">Other To-Do</a></li>
+</ul>
+</div>
+{% endblock %}

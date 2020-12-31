@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ extracurricular.title }}{% endblock %}
+{% block content %}
+<h1>{{ extracurricular.title }}</h1>
+<p>{{ extracurricular.due_date }}</p>
+<p>{{ extracurricular.category }}</p>
+<p>{{ extracurricular.description }}</p>
+<br>
+<p><a href="{% url 'todo_list:edit_extracurricular_to_do' id=extracurricular.id %}">Edit</a></p>
+<p><a href="{% url 'todo_list:delete_extracurricular_to_do' id=extracurricular.id %}">Delete</a></p>
+{% endblock %}
