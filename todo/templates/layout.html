@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/layout.css' %}" type="text/css">
+        {% block static %}{% endblock %}
+    </head>
+    <body style="background-color:aliceblue">
+        {% if user.is_authenticated %}
+        <ul class="nav">
+            <li><a href="{% url 'homepage' %}">Home</a></li>
+            <li><a href="{% url 'todo_list:view_to_dos' %}">My To-Dos</a></li>
+            <li><a href="{% url 'todo_list:add_to_do' %}">Add To-Do</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+        {% endif %}
+        <div class="site-container">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

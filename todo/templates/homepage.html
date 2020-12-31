@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}To-Do Web App{% endblock %}
+
+{% block content %}
+<h1 id="homepage">To-Do Web App</h1>
+<p id="homepage">A simple web app to keep track of your tasks</p>
+{% if user.is_authenticated %}
+<ul id="home-nav">
+    <li><a href="{% url 'todo_list:add_to_do' %}">Add To-Do Item</a></li>
+    <li><a href="{% url 'todo_list:view_to_dos' %}">My To-Do List</a></li>
+</ul>
+{% else %}
+<ul id="logged-out">
+    <li><a href="{% url 'todo_list:signup' %}">Sign Up</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+</ul>
+{% endif %}
+{% endblock %}

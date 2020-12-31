@@ -1,0 +1,181 @@
+.site-container{
+    background-color: aliceblue;
+    font-family: garamond;
+    text-align: center;
+}
+
+ul.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+ul.nav > li > a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 15px 10.24%;
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+}
+
+ul.nav > li a:hover {
+    background-color: black;
+}
+
+.site-container #homepage {
+    left: 0;
+    font-weight: bold;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.site-container p#homepage {
+    line-height: 282px;
+    font-size: 25px;
+}
+
+.site-container h1#homepage {
+    font-size: 50px;
+}
+
+ul#home-nav {
+    position: absolute;
+    line-height: 20px;
+    margin-top: -10px;
+    top: 55%;
+    left: 25%;
+    width: 60%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+ul#home-nav > li > a {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    display: inline;
+    float: left;
+    padding: 11px 14.1%;
+    color: black;
+    text-decoration: none;
+    font-family: garamond;
+    font-size: 17px;
+}
+
+#home-nav > li > a:hover {
+    background-color: blue;
+}
+
+ul#logged-out {
+    position: absolute;
+    line-height: 20px;
+    margin-top: -10px;
+    top: 55%;
+    left: 29.25%;
+    width: 60%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+ul#logged-out > li > a {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    display: inline;
+    float: left;
+    padding: 11px 14.1%;
+    color: black;
+    text-decoration: none;
+    font-family: garamond;
+    font-size: 17px;
+}
+
+#logged-out > li > a:hover {
+    background-color: blue;
+}
+
+.site-container h1#add {
+    line-height: 200px;
+    font-size: 50px;
+}
+
+ul#add-nav {
+    position: absolute;
+    line-height: 20px;
+    margin-top: -10px;
+    top: 45%;
+    left: 20%;
+    width: 70%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+ul#add-nav > li > a  {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    display: inline;
+    float: left;
+    padding: 15px 8.1%;
+    color: black;
+    text-decoration: none;
+    font-family: garamond;
+    font-size: 17px;
+}
+
+#add-nav > li > a:hover {
+    background-color: blue;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+th, td {
+    height: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: darkgrey;
+}
+
+td > a {
+    text-decoration: none;
+    color: black;
+}
+
+tr:hover {
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    list-style: none;
+}
